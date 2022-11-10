@@ -10,6 +10,8 @@ function hidecigs(){
 let selectBox = document.getElementById("dd1");
 let val=selectBox.value;
 function hideshow(val){
+        console.clear();
+        console.log(val);
         if(val==='1'){
         document.getElementById('snacks').style.display='flex'; 
         document.getElementById('drinks').style.display='flex';
