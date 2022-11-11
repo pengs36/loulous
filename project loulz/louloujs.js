@@ -39,9 +39,9 @@ function hideshow(val){
             document.getElementById("myForm").style.display = "none";
         }
         function sub(event){
-        var em=document.getElementById("email").value;
-        var categ=document.getElementById("category").value;
-        var prod=document.getElementById("product").value;
+        var em=document.getElementById("email").value.trim();
+        var categ=document.getElementById("category").value.trim();
+        var prod=document.getElementById("product").value.trim();
 
         let emLength=em.length;
         let categLength=categ.length;
