@@ -38,7 +38,7 @@ function hideshow(val){
         function closeForm() {
             document.getElementById("myForm").style.display = "none";
         }
-        function sub(){
+        function sub(event){
         var em=document.getElementById("email").value;
         var categ=document.getElementById("category").value;
         var prod=document.getElementById("product").value;
@@ -48,11 +48,13 @@ function hideshow(val){
         let prodLength=prod.length;
 
          if (emLength!=0,categLength!=0,prodLength!=0) {
+            event.preventDefault();
         alert("Email : "+em +"\nCategory : " + categ +"\nProduct : "+ prod);
          return true;
          }
          else if ( emLength== null || emLength == "", categLength == null || categLength == "", prodLength == null || prodLength == ""){
-        alert ("please fill all fields");
+            event.preventDefault();
+            alert ("please fill all fields");
          return false;
          }
           } 
