@@ -44,10 +44,12 @@ function sub(event) {
   let emLength = em.length;
   let categLength = categ.length;
   let prodLength = prod.length;
+  let form = document.getElementsByClassName("form-container")[0];
 
   if ((emLength != 0, categLength != 0, prodLength != 0)) {
     event.preventDefault();
     alert("Email : " + em + "\nCategory : " + categ + "\nProduct : " + prod);
+    form.reset();
     return true;
   } else if (
     (emLength == null || emLength == "",
