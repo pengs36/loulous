@@ -128,7 +128,7 @@
     <div><b>you can't find the product you want,please fill the form</b> <button class="open-button"
         onclick="openForm()"><b>here</b></button>
       <div class="form-popup" id="myForm">
-        <form class="form-container"  onsubmit="sub(event)">
+        <form class="form-container">
           <h1>Form</h1>
 
           <label for="email"><b>Email</b></label>
@@ -140,7 +140,7 @@
           <label for="product"><b>Product</b></label>
           <input type="text" placeholder="Product" id="product" required>
 
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn" onclick="sub(event)">Submit</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
       </div>
